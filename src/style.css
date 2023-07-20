@@ -88,3 +88,8 @@ header {
   color: #fff;
   border-radius: 50%;
 }
+
+.forwardarrow {
+  background-color: #000;
+  width: fit-content;
+}
