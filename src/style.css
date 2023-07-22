@@ -134,7 +134,6 @@ nav.scrol {
 /* hero style ends */
 
 /* div-2 styling */
-
 .categories-div, .top-item, .best-selling {
   display: flex;
   align-items: center;
@@ -158,7 +157,7 @@ nav.scrol {
 }
 
 .forwardarrow:hover {
-  background-color: ;
+  background-color: #655C97;
 }
 
 .grids-1 {
@@ -260,11 +259,6 @@ nav.scrol {
   font-size: 27px;
 }
 
-.star-icon {
-  fa-color: yellow;
-  font-size: 24px;
-}
-
 .rate img {
   width: 20px;
   color: yellow;
@@ -318,9 +312,6 @@ nav.scrol {
 /* flash sale style ends */
 
 /* services div styling begins */
-.services {
-  
-}
 .middle {
   font-size: 3rem;
   text-align: center;
@@ -362,7 +353,7 @@ nav.scrol {
 /* Best seller div starts */
 .best-seller {
   background-color: #F5F5F5;
-  height: 50rem;
+  height: fit-content;
 }
 
 .best-selling-divs{
@@ -370,6 +361,7 @@ nav.scrol {
   gap: 2rem;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding-bottom: 10rem;
 }
 
 .selling-divs {
@@ -405,8 +397,14 @@ nav.scrol {
 /* signup div styling begins */
 .signup-div {
   display: flex;
+  flex-wrap: wrap;
   margin: 5rem ;
   gap: 7rem;
+  padding: 4rem 2rem;
+}
+
+.hor-line {
+  border: 1px solid black;
 }
 
 .signup-div h1 {
@@ -414,10 +412,70 @@ nav.scrol {
 }
 
 .signup-1 {
-  flex-direction: 1;
-  /* padding: 0 5rem; */
+  /* Set the width to 50% to take half of the available width */
+  width: 50%;
+}
+
+.signup-2 {
+  width: 30rem;
+}
+
+.signup2-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.member a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
 }
 /* signup div styling ends */
+
+/* follow us div style begins */
+.follow-us {
+  margin: 0 2rem;
+}
+
+.follow-us p {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.followus-2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+}
+
+/* .follow-img1 {
+  background-image: url(../assets/shop/img_126.jpg);
+}
+
+.follow-img2 {
+  background-image: url(../assets/shop/img_127.jpg);
+}
+.follow-img3 {
+  background-image: url(../assets/shop/img_128.jpg);
+}
+.follow-img4 {
+  background-image: url(../assets/shop/img_129.jpg);
+} */
+
+.followus-2 div img {
+  /* flex-grow: 1; */
+  /* max-width: 25%; */
+  height: 24rem;
+  width: 20rem;
+}
+/* follow us div style ends */
 
 /* footer */
 .footer{
