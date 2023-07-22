@@ -169,6 +169,7 @@ nav.scrol {
 }
 
 .griddivs {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -179,17 +180,41 @@ nav.scrol {
   border: 2px solid black;
   color: #fff;
   margin-top: 3rem;
+  overflow: hidden;
 }
 
 .griddivs h1 {
   font-size: 40px;
+  transition: transform 0.3s ease;
 }
 
 .invisiblebutton {
   background-color: transparent;
+  padding: 0.4rem 1rem;
+  border-radius: 7px;
   color: #fff;
-  font-size: 20px;
-  display: none;
+  border: 1.5px solid #fff;
+  font-weight: 500;
+  font-size: 18px;
+  position: absolute; /* Position the button within the .griddivs */
+  bottom: -40px; /* Move the button below the .griddivs initially */
+  left: 50%; /* Center the button horizontally */
+  transform: translateX(-50%); /* Center the button horizontally */
+  opacity: 0; /* Hide the button initially */
+  transition: bottom 0.3s ease, opacity 0.3s ease; /* Add transitions for the animation */
+}
+
+.griddivs:hover .invisiblebutton {
+  bottom: 7rem; /* Move the button up when hovering over .griddivs */
+  opacity: 1; /* Show the button on hover */
+}
+
+.invisiblebutton:hover {
+  background-color: #655C97;
+}
+
+.griddivs:hover h1 {
+  transform: translateY(-15px); /* Move the h1 tag up on hover */
 }
 
 .griddivs:nth-child(1) {
@@ -313,7 +338,6 @@ nav.scrol {
 
 /* services div styling begins */
 .middle {
-  font-size: 3rem;
   text-align: center;
   margin-bottom: 5rem;
   /* width: 50%; */
@@ -340,6 +364,10 @@ nav.scrol {
 .service-divs p {
   color: gray;
   font-size: 18px;
+  margin-top: auto;
+}
+.service-divs h2 {
+  font-size: 26px;
 }
 
 .service-imgs {
@@ -431,6 +459,21 @@ nav.scrol {
   color: black;
   font-weight: 500;
 }
+
+/* Add a class to trigger the animation when the section is in view */
+.signup-1.animate, .signup-2.animate {
+  animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%); /* Start from the left side of the page */
+  }
+  to {
+    transform: translateX(0); /* Slide to the center of the page */
+  }
+}
+
 /* signup div styling ends */
 
 /* follow us div style begins */
