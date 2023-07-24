@@ -520,18 +520,108 @@ nav.scrol {
 }
 /* follow us div style ends */
 
-/* footer */
+/* footer starts*/
 .footer{
-  padding-top: 15rem;
+  padding-top: 10rem;
 }
 
+.footer-list{
+  padding-top: 20px;
+  font-size: 20px;
+}
 
+.socials a {
+    margin-left: 6px;
+    margin-right: 20px;
+}
 
+.Newsletter p{
+  padding-top: 20px;
+}
 
+.title{
+  margin-left: 28px;
+  font-size: 30px;
+  color: rgb(106, 104, 104);
+}
 
+.Newsletter input{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  border-radius: 10px;
+  font-size: 20px;
+}
 
+.Newsletter button{
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
 
+.info{
+  padding-top: 15px;
+  font-size: 18px;
+}
 
+/* footer animation starts*/
+#logo-up {
+  margin-top: 1em;
+  font-size: 1.4rem;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: slidetop 2s 0.1s forwards;
+}
+@keyframes slidetop {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#link-up {
+  margin-top: 1em;
+  font-size: 1.4rem;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: linkup 2s 0.3s forwards;
+}
+@keyframes linkup {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#legal-up {
+  margin-top: 1em;
+  font-size: 1.4rem;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: legalup 2s 0.6s forwards;
+}
+@keyframes legalup {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#news-letter {
+  margin-top: 1em;
+  font-size: 1.4rem;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: newsletter 2s 0.3s forwards;
+}
+@keyframes newsletter {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* footer animation ends */
+
+/* footer ends */
 
 
 
