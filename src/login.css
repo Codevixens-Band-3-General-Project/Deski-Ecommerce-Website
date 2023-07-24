@@ -8,10 +8,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-.main-container {
-    width: 650px;
-}
-
 .nav {
     width: 640px;
     display: flex;
@@ -189,20 +185,75 @@ footer {
 
 @keyframes down-up {
     0% {
-        transform: translateY(-10px);
+        transform: translateY(-11px);
     }
 
     100% {
-        transform: translateY(10px);
+        transform: translateY(11px);
     }
 }
 
 @keyframes up-down {
     0% {
-        transform: translateY(10px);
+        transform: translateY(11px);
     }
 
     100% {
-        transform: translateY(-10px);
+        transform: translateY(-11px);
+    }
+}
+
+@media (max-width: 800px) {
+    .col-1 {
+        display: none;
+    }
+    .nav {
+        width: 640px;
+    }
+    .buddy {
+        padding: 0 15px;
+    }
+    h1 {
+        font-size:54px;
+    }
+    .my-input {
+        width: 650px;
+    }
+    .input-field {
+        padding-top: 15px;
+    }
+    .checkbox {
+        width: 600px;
+
+    }
+    .btn {
+        width: 620px;
+    }
+}
+
+@media (max-width: 500px) {
+    .col-1 {
+        display: none;
+    }
+    .nav {
+        width: 480px;
+    }
+    .buddy {
+        padding: 0 10px;
+    }
+    h1 {
+        font-size:50px;
+    }
+    .my-input {
+        width: 490px;
+    }
+    .input-field {
+        padding-top: 10px;
+    }
+    .checkbox {
+        width: 475px;
+    }
+    .btn {
+        width: 460px;
     }
 }
