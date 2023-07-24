@@ -58,6 +58,87 @@ nav.scrol {
 
 /* Navigation section end */
 
+/* sidebar */
+.show {
+  background-color: #fbf3ec;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -500px;
+  width: 420px;
+  z-index: 9999;
+  transition: right 0.3s;
+  overflow-y: auto;
+  color: black;
+}
+.show.active {
+  right: 0;
+}
+.top{
+  display: flex;
+  margin-top: 2em;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5em 0 1em;
+}
+.times {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.times:hover{
+  color: rgb(125, 24, 248);
+}
+.main-links {
+  margin-top: 3em;
+}
+.main-links a {
+  text-decoration: none;
+  
+}
+.home-links a:hover{
+  color: rgb(125, 24, 248);
+}
+.home-links a{
+  color: black;
+}
+.link-sign {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: thin solid #e3dfdf;
+  padding:0.5em 0.8em 0.5em 1em;
+  cursor: pointer;
+}
+.link-sign:hover{
+  color: rgb(125, 24, 248);
+}
+.accordion {
+  cursor: pointer;
+  transition: transform 0.3s;
+  padding: 0.3em;
+}
+.accordion-content {
+  display: none;
+  background-color: white;
+  padding: 0;
+}
+.accordion-content li {
+  display: flex;
+  align-items: center;
+  padding: 0.5em 0;
+  
+}
+.accordion-content.active {
+  display: block;
+}
+.accordion .fa-plus {
+  font-size: 1rem;
+}
+.accordion.active .fa-plus {
+  transform: rotate(45deg);
+}
+/* sidebar ends */
+
 /* styling the hero section */
 .hero {
   margin-bottom: 6rem;
@@ -623,8 +704,24 @@ nav.scrol {
 
 /* footer ends */
 
+/* media queries */
+/* sidebar */
+@media screen and (max-width: 572px) {
+  .login {
+    display: none;
+  }
+  .show{
+    max-width: 320px;
+  }
+}
 
-
+@media screen  and (max-width: 320px) {
+  .show{
+    width: 100%;
+    right: -100%;
+  }
+}
+/* sidebar ends */
 
 
 
