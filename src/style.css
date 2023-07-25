@@ -143,15 +143,16 @@ nav.scrol {
 .hero {
   margin-bottom: 6rem;
   display: flex;
+  flex-wrap: wrap;
   gap: 3rem;
   justify-content: space-between;
-  padding: 0 6rem;
+  padding: 0 2rem;
   background-color: #FFFAF0;
 }
 
 .hero-heading {
   font-family: "Playfair Display", serif;
-  font-size: 120px;
+  font-size: 7rem;
   margin-top: 50px;
   padding: 28px 0;
 }
@@ -194,22 +195,17 @@ nav.scrol {
 }
 
 .hero-2 {
-  width: 100%;
+  width: fit-content;
   position: relative;
   color: #fff;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
 .hero-img {
-  width: 58rem;
-  height: 60rem;
+  width: 100%;
+  height: auto;
   /* position: absolute; */
   /* top: -120px; */
-}
-
-.offer {
-  /* position: absolute; */
-  width: fit-content;
 }
 
 /* hero style ends */
@@ -378,7 +374,7 @@ nav.scrol {
   background-color: #FFF9EB;
   display: flex;
   /* gap: 2rem; */
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   margin: 0 2rem 7rem;
 }
 
@@ -392,9 +388,14 @@ nav.scrol {
 }
 
 .summer {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   /* margin-bottom: 2rem; */
+}
+
+.girl-in-dress {
+  width: 50%;
+  height: auto;
 }
 
 .slashsale {
@@ -712,6 +713,19 @@ nav.scrol {
   }
   .show{
     max-width: 320px;
+  }
+
+  .flashsale {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .flashsale img {
+    width: 100%;
+    height: auto;
   }
 }
 
