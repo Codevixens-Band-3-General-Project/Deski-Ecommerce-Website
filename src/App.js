@@ -38,4 +38,3 @@ myLinks.forEach((items)=>{
         myAccordion.classList.toggle("active")
     })
 })
-
